@@ -43,6 +43,18 @@ h1.heading {
     margin: 0 0 10px;
 }
 
+.title {
+    margin-bottom: 50px;
+}
+
+.second_title {
+    margin-bottom: 36px;
+    font-size: 0.875rem;
+}
+
+.under_line {
+    width: 40px;
+}
 
 /*-----------------------
 ヘッダー 
@@ -70,6 +82,7 @@ h1.heading {
     display: flex;
     align-items: center;
 }
+
 #menu > li {
     margin-right: 30px;
 }
@@ -87,4 +100,185 @@ h1.heading {
 -----------------------*/
 #main_visual {
     margin-bottom: 120px;
+}
+
+/*-----------------------
+News
+-----------------------*/
+#news {
+    margin-bottom: 120px;
+}
+
+#news .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+#news .list li .header {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 16px;
+}
+
+#news .list li .header span {
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#news .list li:first-child {
+    padding-left: 0;
+}
+
+#news .list li {
+    width: calc(100% / 3);
+    border-right: solid 1px #000;
+    padding: 10px 20px;
+}
+
+#news .list li:last-child {
+    border-right: none;
+}
+
+/*-----------------------
+About
+-----------------------*/
+#about {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+#about img {
+    width: 55%;
+}
+
+#about img.img {
+    /* width: 100%; */
+    height: 400px;
+    object-fit: cover;
+}
+
+#about .text {
+    width: 45%;
+    padding: 180px 5% 0 5%;
+}
+
+#about .content p {
+    line-height: 2.2;
+}
+
+/*-----------------------
+Business
+-----------------------*/
+#business .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+#business .flex .left {
+    width: 46%;
+    margin-top: 100px;
+}
+
+#business .flex .right {
+    width: 46%;
+}
+
+#business .flex .title {
+    font-weight: bold;
+    margin: 0 0 10px 18px;
+    position: relative;
+}
+
+/*疑似要素でタイトルの横線を引く*/
+#business .flex .title::before {
+    content: "";
+    width: 8px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: -18px;
+}
+
+#business .flex img {
+    margin-bottom: 50px;
+}
+
+/*-----------------------
+Company
+-----------------------*/
+#company {
+    height: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#company .text {
+    width: 55%;
+    background-color: #fff;
+    padding: 100px 8% 100px 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#company .company {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#company .company dt {
+    width: 20%;
+    margin-top: 10px;
+}
+
+#company .company dd {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#company .company .add {
+    margin-left: 20%;
+}
+
+#company .img {
+    width: 53%;
+    position: absolute;
+    top: 115px;
+    right: 0;
+}
+
+#company .img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*-----------------------
+footer
+-----------------------*/
+footer {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+footer > .wrapper > .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+footer > .wrapper > .c {
+    font-size: 0.625rem;
 }

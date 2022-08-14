@@ -29,10 +29,12 @@
             <img src="img/main_image.jpg" alt="office">
         </div>
         <section id="news" class="wrapper">
-            <h1 class="heading">NEWS</h1>
-            <h3>ニュース</h3>セリフ
-            <hr class="under_line">
-            <ul class="news">
+            <section class="title">
+                <h1 class="heading">NEWS</h1>
+                <h3 class="second_title">ニュース</h3>
+                <hr class="under_line">
+            </section>
+            <ul class="list">
                 <li>
                     <div class="header">
                         <p>2021.01.01</p>
@@ -63,75 +65,82 @@
             </ul>
         </section>
         <section id="about">
-            <img src="img/about_image.jpg" alt="message">
+            <img src="img/about_image.jpg" alt="message" class="img">
             <div class="text">
-                <h1 class="heading">ABOUT</h1>
-                <h4>私たちについて</h4>
-                <hr class="under_line">
-                <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
-                <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
-                <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+                <section class="title">
+                    <h1 class="heading">ABOUT</h1>
+                    <h4 class="second_title">私たちについて</h4>
+                    <hr class="under_line">
+                </section>
+                <section class="content">
+                    <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+                    <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+                    <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
+                </section>
             </div>
         </section>
         <section id="business" class="wrapper">
-            <h1 class="heading">BUSINESS</h1>
-            <h4>事業内容</h4>
-            <hr>
-            <ul class="business">
-                <li>
-                    <span class="title">プロモーション企画・制作</span>
-                    <img src="img/business_image1.jpg" alt="camera">
-                </li>
-                <li>
+            <section class="title">
+                <h1 class="heading">BUSINESS</h1>
+                <h4 class="second_title">事業内容</h4>
+                <hr class="under_line">
+            </section>
+            <div class="flex">
+                <div class="left">
                     <span class="title">Web制作・マーケティング</span>
                     <img src="img/business_image2.jpg" alt="meeting">
-                </li>
-                <li>
-                    <span class="title">ソーシャル企画・運営</span>
-                    <img src="img/business_image3.jpg" alt="sp_screen">
-                </li>
-                <li>
                     <span class="title">インターネットメディア事業</span>
                     <img src="img/business_image4.jpg" alt="pc_screen">
-                </li>
-            </ul>
+                </div>
+                <div class="right">
+                    <span class="title">プロモーション企画・制作</span>
+                    <img src="img/business_image1.jpg" alt="camera">
+                    <span class="title">ソーシャル企画・運営</span>
+                    <img src="img/business_image3.jpg" alt="sp_screen">
+                </div>
+            </div>
         </section>
-        <section id="conpany" class="wrapper">
-            <h1 class="heading">COMPANY</h1>
-            <h4>会社情報</h4>
-            <hr class="under_line">
-            <dl class="company">
-                <dt>会社名</dt>
-                <dd>ウェブエンターテイメントデザイン株式会社</dd>
-                <dt>所在地</dt>
-                <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
-                <dt>代表</dt>
-                <dd>ＸＸＸＸＸＸ</dd>
-                <dt>設立</dt>
-                <dd>2021年1月1日</dd>
-                <dt>資本金</dt>
-                <dd>3,000,000円</dd>
-                <dt>事業内容</dt>
-                <dd>Web制作・マーケティング</dd>
-                <dd>インターネットメディア事業</dd>
-                <dd>プロモーション企画・制作</dd>
-                <dd>ソーシャル企画・運営</dd>
-            </dl>
+        <section id="company" class="wrapper">
+            <div class="text">
+                <section class="title">
+                    <h1 class="heading">COMPANY</h1>
+                    <h4 class="second_title">会社情報</h4>
+                    <hr class="under_line">
+                </section>
+                <dl class="company">
+                    <dt>会社名</dt>
+                    <dd>ウェブエンターテイメントデザイン株式会社</dd>
+                    <dt>所在地</dt>
+                    <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
+                    <dt>代表</dt>
+                    <dd>ＸＸＸＸＸＸ</dd>
+                    <dt>設立</dt>
+                    <dd>2021年1月1日</dd>
+                    <dt>資本金</dt>
+                    <dd>3,000,000円</dd>
+                    <dt>事業内容</dt>
+                    <dd>Web制作・マーケティング</dd>
+                    <dd class="add">インターネットメディア事業</dd>
+                    <dd class="add">プロモーション企画・制作</dd>
+                    <dd class="add">ソーシャル企画・運営</dd>
+                </dl>
+            </div>
+            <div class="img">
+                <img src="img/company_image.jpg" alt="company">
+            </div>
         </section>
     </main>
     <footer>
         <div class="wrapper">
-            <section class="logo">
-                <span>WED</span>
-            </section>
-            <section class="info">
+            <section class="flex">
+                <span id="logo">WED</span>
                 <ul>
                     <li>
                         <h6>Web Entertainment Design Inc.</h6>
                     </li>
                     <li>
-                        <h6>West Building 3F
-                            9-99 Sakuragaokacho Shibuya-ku
+                        <h6>West Building 3F<br>
+                            9-99 Sakuragaokacho Shibuya-ku<br>
                             Tokyo, Japan 150-0031
                         </h6>
                     </li>
