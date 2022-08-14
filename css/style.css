@@ -1,0 +1,90 @@
+/*-----------------------
+初期設定
+-----------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #000;
+    font-size: 0.875rem;
+}
+
+a {
+    color: #000;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+/* 横幅を設定するための共通クラス */
+.wrapper {
+    width: 100%;
+    max-width: 1032px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/*-----------------------
+使いまわし
+-----------------------*/
+h1.heading {
+    font-size: 2.25rem;
+    letter-spacing: 0.3em;
+    margin: 0 0 10px;
+}
+
+
+/*-----------------------
+ヘッダー 
+-----------------------*/
+#header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inner {
+    display: flex;
+    justify-content: left;
+}
+
+#logo {
+    font-size: 2.3rem;
+    letter-spacing: 10px;
+    margin-right: 50px;
+}
+
+#inner > ul {
+    /* liが横並びになる */
+    display: flex;
+    align-items: center;
+}
+#menu > li {
+    margin-right: 30px;
+}
+
+#header #contact {
+    width: 200px;
+    height: 80px;
+    background-color: #000;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*-----------------------
+メイン写真
+-----------------------*/
+#main_visual {
+    margin-bottom: 120px;
+}
