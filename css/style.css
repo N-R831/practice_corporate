@@ -26,6 +26,10 @@ li {
     list-style: none;
 }
 
+dt {
+    font-weight: normal;
+}
+
 /* 横幅を設定するための共通クラス */
 .wrapper {
     width: 100%;
@@ -35,7 +39,7 @@ li {
 }
 
 /*-----------------------
-使いまわし
+parts
 -----------------------*/
 h1.heading {
     font-size: 2.25rem;
@@ -43,7 +47,7 @@ h1.heading {
     margin: 0 0 10px;
 }
 
-.title {
+.section-title {
     margin-bottom: 50px;
 }
 
@@ -57,7 +61,7 @@ h1.heading {
 }
 
 /*-----------------------
-ヘッダー 
+header 
 -----------------------*/
 #header {
     height: 80px;
@@ -242,9 +246,17 @@ Company
     margin-top: 10px;
 }
 
+#company .company dt:first-of-type {
+    margin-top: 0;
+}
+
 #company .company dd {
     width: 80%;
     margin-top: 10px;
+}
+
+#company .company dd:first-of-type {
+    margin-top: 0;
 }
 
 #company .company .add {
@@ -281,4 +293,149 @@ footer > .wrapper > .flex {
 
 footer > .wrapper > .c {
     font-size: 0.625rem;
+}
+
+/*-----------------------
+responsive design
+-----------------------*/
+@media (max-width: 900px) {
+    /*-----------------------
+    parts
+    -----------------------*/
+    .title {
+        margin-bottom: 34px;
+    }
+
+    .second_title {
+        margin-bottom: 24px;
+    }
+    /*-----------------------
+    header 
+    -----------------------*/
+    #logo {
+        width: 80px;
+        margin: 8px 0;
+        font-size: 1.8rem;
+    }
+
+    #inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header #contact {
+        display: none;
+    }
+
+    /*-------------------------------------------
+    main_visual
+    -------------------------------------------*/
+    #main_visual {
+        margin-bottom: 80px;
+    }
+
+    /*-----------------------
+    news 
+    -----------------------*/
+    #news .list {
+        flex-direction: column;
+    }
+
+    #news .list li {
+        border-right: none;
+        padding: 10px 0px;
+        margin-bottom: 20px;
+    }
+
+    /*-----------------------
+    about
+    -----------------------*/
+    #about {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    #about img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #about .text {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    /*-----------------------
+    Business
+    -----------------------*/
+    #business .flex {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #business .flex .left {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    #business .flex .right {
+        width: 100%;
+    }
+
+    #business .flex .title {
+        text-align: left;
+    }
+
+    /*-----------------------
+    Company
+    -----------------------*/
+    #company {
+        height: auto;
+        flex-direction: column;
+        position: static;
+    }
+
+    #company .text {
+        width: 100%;
+        padding: 40px 20px;
+        margin-bottom: 20px;
+        position: static;
+    }
+
+    #company .img {
+        width: 100%;
+        padding: 0;
+        position: static; /* staticでabsoluteを解除 */
+    }
+
+    #company .company {
+        flex-direction: column;
+    }
+
+    #company .company dt {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #company .company dd {
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 14px;
+    }
+
+    #company .company dd:first-of-type {
+        margin-top: 5px;
+    }
+
+    #company .company .add {
+        margin-left: 0;
+    }
+
+    /*-----------------------
+    Footer
+    -----------------------*/
+    footer > .wrapper > .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
